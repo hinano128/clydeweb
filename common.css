@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@700&display=swap');
+
+/* 自動スクロールの設定 */
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: #1D1502;
+    font-size: 20px;
+    font-family: "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
+    text-align: center;
+    line-height: normal;
+    background-color: #FFFDF8;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/*---ヘッダー--- */
+
+header h1{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 350px;
+    padding-top: 23px;
+    padding-bottom: 27px;
+
+}
+
+nav{
+    border-top: 2px solid #6A6A6A;
+    border-bottom: 2px solid #6A6A6A;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-bottom: 36px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(255, 253, 248, 0.95);
+}
+
+.container{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav li{
+    color: #54410C;
+    font-weight: 400;
+    font-size: 18px;
+    
+
+}
+
+nav li a:hover{
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+nav li.active a{
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/*---メイン--- */
+
+aside.reserve p{
+    padding-bottom: 67px;
+}
+
+aside p a:hover{
+    opacity: 0.7;
+}
+
+/*---フッター--- */
+
+footer{
+    background-color: #322707;
+    padding-top: 42px;
+}
+
+footer section{
+    max-width: 540px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5F4E1C;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin-bottom: 30px;
+}
+
+footer section h2{
+    font-weight: 400;
+
+}
+
+footer section p{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+footer .map{
+    padding-bottom: 30px;
+}
+
+footer address{
+    color: #FFFDF8;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+footer .end{
+    background-color: #000;
+    color: #FFFDF8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+footer p.pagetop{
+    position: fixed;
+    right: 34px;
+    bottom: 34px;
+}
+
+@media (max-width:575px) {
+    nav{
+        position: unset;
+    }
+
+    
+    nav ul{
+        display: block;
+        
+    }
+
+    nav li{
+        padding-bottom: 16px;
+    }
+
+    footer p.end span{
+        display: none;
+    }
+
+    
+}

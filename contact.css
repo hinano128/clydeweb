@@ -1,0 +1,107 @@
+@import url(common.css);
+
+main article h1 {
+    font-family: "Kaisei Tokumin", serif;
+    font-size: 40px;
+    font-weight: bold;
+    height: 117px;
+    background-image: url(../img/since.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-bottom: 67px;
+}
+
+main form {
+    padding-bottom: 67px;
+
+}
+
+main form span{
+    font-size: 10px;
+}
+
+main form div.box {
+    padding: 38px 8.5%;
+    margin-bottom: 10px;
+    text-align: left;
+    border: 1px solid #4a4a4a;
+    display: flex;
+    column-gap: 30px;
+}
+
+main form div.left,
+main form div.right{
+    flex: 1;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #4a4a4a;
+    outline: none;
+}
+
+textarea {
+    height: 200px;
+    resize: vertical;
+  }
+
+main form dt {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+main form dd {
+    padding-bottom: 10px;
+}
+
+main form button {
+    width: 160px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 20px;
+    color: #fffdf8;
+    background-color: #6b5311;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+
+main form button:hover{
+    opacity: 0.7;
+}
+
+main section {
+    max-width:730px ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:67px ;
+    padding: 13px 30px;
+    color: #fffdf8;
+    background-color: #6b5311;
+    font-size: 16px;
+}
+
+main section h2 {
+    padding-bottom: 6px;
+}
+
+main section p {
+    text-align: left;
+}
+
+@media (max-width:575px) {
+
+    main form div.box {
+    display: block;
+}
+    
+main form dd {
+    padding-bottom: 30px;
+}
+
+}
+
